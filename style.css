@@ -1,0 +1,176 @@
+/* RESET BLOCK */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* MAIN SETTINGS */
+/* Top Bar Elements*/
+.topbar {
+    width: 60vw;
+    height: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 2.5 vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topbar1 {
+    background-color: lightskyblue;
+    color: white;
+}
+
+#sitename {
+    font-size: 2.7vw;
+}
+
+.city li {
+    display: inline-block;
+    margin-left: 3vw;
+    font-size: 1.6vw;
+}
+
+.city li a {
+    text-decoration: none;
+    color: white;
+}
+
+#cityname {
+    flex: 1;
+    font-size: 2.3vw;
+}
+
+label {
+    font-size: 1.5vw;
+}
+
+select {
+    margin-left: 1vw;
+}
+
+/* Main Elements */
+.main {
+    width: 60vw;
+    height: 56vh;
+    padding-top: 1vh;
+    margin: auto;
+    margin-bottom: 2vh;
+    border-top: 3px solid black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.col {
+    width: 13.5vw;
+    height: 52vh;
+    padding-top: 2vh;
+    border-radius: 3%;
+    background-color: gainsboro;
+    box-shadow: 2px 2px 1px 1px lightgray;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 55% 15% 10% 10%;
+    grid-template-areas:
+        "day"
+        "weather"
+        "desc"
+        "temp"
+        ".";
+    align-items: center;
+}
+
+.day {
+    font-size: 2vw;
+    grid-area: day;
+    place-self: center;
+}
+
+.weather {
+    width: 10vw;
+    border-radius: 50%;
+    grid-area: weather;
+    place-self: center;
+}
+
+.desc {
+    font-size: 1.3vw;
+    font-weight: bold;
+    grid-area: desc;
+    place-self: start center;
+}
+
+.temp {
+    grid-area: temp;
+    place-self: center;
+}
+
+.maxtemp, .mintemp {
+    font-size: 1.7vw;
+    font-weight: bold;
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
+    display: inline-block;
+}
+
+.maxtemp {
+    color: darkred;
+    grid-area: maxtemp;
+}
+
+.mintemp {
+    color: dodgerblue;
+    grid-area: mintemp;
+}
+
+/* Bottom Elements */
+.bottom {
+    width: 55.7vw;
+    height: 17vh;
+    padding: 1vh 2vw;
+    border: 3px solid black;
+    background-color: lightgray;
+    position: fixed;
+    bottom: 1;
+    margin-left: 20vw;
+    display: grid;
+    grid-template-columns: 15% 30% 30% 25%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+        "cookie header header button"
+        "cookie lines lines button";
+    align-items: start;
+}
+
+#cookie {
+    width: 6vw;
+    grid-area: cookie;
+    align-self: center;
+}
+
+#h2bottom {
+    grid-area: header;
+    align-self: center;
+    font-size: 1.7vw;
+}
+
+#lines {
+    grid-area: lines;
+    font-size: 1.3vw;
+}
+
+#accbtn {
+    width: 7vw;
+    height: 5vh;
+    background-color: lightskyblue;
+    border: 3px solid black;
+    box-shadow: 3px 3px 1px 1px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    grid-area: button;
+    align-self: center;
+    justify-self: end;
+}
